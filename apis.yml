@@ -1,7 +1,13 @@
 aid: aid-tech
 name: AID:Tech
-description: AID:Tech is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: 'AID:Tech is a Dublin-based payments and digital-identity infrastructure company that bridges
+  Web2 and Web3, delivering self-sovereign decentralized identity (DID), KYC/AML verification, digital wallets
+  with virtual cards, and secure payouts for benefits distribution, disaster relief, and financial inclusion.
+  Its products include Kare (benefits and disaster-relief distribution) and Klimify, and its engineering is
+  rooted in blockchain and distributed-ledger technology (Hyperledger Fabric, Openchain, and the bryk/algo DID
+  methods). AID:Tech does not publish a first-party public developer API, OpenAPI specification, or developer
+  portal; its public technical surface is its GitHub organization (DID-method reference implementations, a Circle
+  API SDK, and Kubernetes/Hyperledger tooling) and its Medium engineering blog.'
 url: https://raw.githubusercontent.com/api-evangelist/aid-tech/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +15,29 @@ x-backed-by:
 - techstars
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://cdn.prod.website-files.com/63ce95462eb32a416a4535c4/648c57b645c6e8a0ce8d63ed_logo_aidtech.svg
 tags:
 - Company
+- Digital Identity
+- Self-Sovereign Identity
+- Blockchain
+- Payments
+- Financial Inclusion
+- KYC
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/aid-tech-domain-security.yml
 - type: Website
   url: https://aid.technology/
+- type: GitHubOrganization
+  url: https://github.com/aidtechnology
+- type: Blog
+  url: https://medium.com/aid-tech
+- type: Support
+  url: mailto:info@aid.technology
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
